@@ -1,4 +1,4 @@
-# PROJECT INSTALLR (Team Codeskulls)
+# PROJECT INSTALLr (Team Codeskulls)
 
 Installr makes installations easy by using little scripts. This project will be updated with every installer script like Joomla,  Laravel, installing angular js, and every installation script or you can request us through the mail codeskulls@gmail.com
 
@@ -21,7 +21,7 @@ bash wpinstall.sh
 * php
 * mysql
 ## Watch our tutorial video on asciinema
-<a href="https://asciinema.org/a/pPKfV8hS0IqJD60sLiElm0eMl" rel="some text">![Foo](http://i68.tinypic.com/257lggo.png)]</a>
+<a href="https://asciinema.org/a/pPKfV8hS0IqJD60sLiElm0eMl" rel="some text">![Foo](http://i68.tinypic.com/257lggo.png)</a>
 
 ## Contributing
 This is an open source project.
