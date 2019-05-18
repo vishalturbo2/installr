@@ -1,6 +1,7 @@
 #!/bin/bash -e
 clear
 echo "wordpress installation script by Team Codeskulls"
+echo "script made for afourtech hackathon"
 apt-get update
 apt-get install perl
 echo "installing apache server"
@@ -14,14 +15,14 @@ apt-get upgrade
 apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd
 echo "installing mysql"
 sudo apt-get install mysql-client mysql-server
-echo "securing my sql"
-mysql_secure_installation 
 echo "now create a database for wordpress"
 
 echo "Please enter root user MySQL password!"
 read rootpasswd
 echo "Please enter the NAME of the new WordPress database! (example: database1)"
 read dbname
+echo "Please enter the WordPress database CHARACTER SET! (example: latin1, utf8, ...)"
+read charset
 echo "Creating new WordPress database..."
 mysql -uroot -p${rootpasswd} -e "CREATE DATABASE ${dbname} /*\!40100 DEFAULT CHARACTER SET ${charset} */;"
 echo "Database successfully created!"
@@ -29,9 +30,9 @@ echo "Showing existing databases..."
 mysql -uroot -p${rootpasswd} -e "show databases;"
 echo ""
 echo "Please enter the NAME of the new WordPress database user! (example: user1)"
-read dbuser
+read username
 echo "Please enter the PASSWORD for the new WordPress database user!"
-read dbpass
+read userpass
 echo "Creating new user..."
 mysql -uroot -p${rootpasswd} -e "CREATE USER ${username}@localhost IDENTIFIED BY '${userpass}';"
 echo "User successfully created!"
@@ -40,7 +41,6 @@ echo "Granting ALL privileges on ${dbname} to ${username}!"
 mysql -uroot -p${rootpasswd} -e "GRANT ALL PRIVILEGES ON ${dbname}.* TO '${username}'@'localhost';"
 mysql -uroot -p${rootpasswd} -e "FLUSH PRIVILEGES;"
 echo "You're good now :)"
-
 
 echo "============================================"
 echo "WordPress Install Script"
@@ -67,8 +67,8 @@ cd /var/www/html/wordpress
 cp wp-config-sample.php wp-config.php
 #set database details with perl find and replace
 perl -pi -e "s/database_name_here/$dbname/g" wp-config.php
-perl -pi -e "s/username_here/$dbuser/g" wp-config.php
-perl -pi -e "s/password_here/$dbpass/g" wp-config.php
+perl -pi -e "s/username_here/$username/g" wp-config.php
+perl -pi -e "s/password_here/$userpass/g" wp-config.php
 
 #set WP salts
 perl -i -pe'
@@ -92,4 +92,3 @@ echo "========================="
 echo "Installation is complete."
 echo "========================="
 fi          
-
