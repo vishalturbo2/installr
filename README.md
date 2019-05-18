@@ -1,6 +1,6 @@
 # PROJECT INSTALLr (Team Codeskulls)
 
-Installr makes installations easy by using little scripts. This project will be updated with every installer script like Joomla,  Laravel, installing angular js, and every installation script or you can request us through the mail codeskulls@gmail.com
+Installr makes installations easy by using little scripts. This project will be updated with every installer script for Joomla,  Laravel, installing angular js, and every installation script or you can request us through the mail codeskulls@gmail.com
 
 ## Wordpress Installation (represented for Afourtech Hackathon)
 
