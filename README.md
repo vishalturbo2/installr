@@ -9,20 +9,19 @@ Use the bash [script](https://raw.githubusercontent.com/vishalturbo2/installr/ma
 ```bash
 wget https://raw.githubusercontent.com/vishalturbo2/installr/master/wpinstall.sh
 ```
+## Usage (Run Bash)
+
+```python
+bash wpinstall.sh
+```
+
 ## Installed applications
 * Perl
 * Apache server
 * php
 * mysql
 ## Watch our tutorial video on asciinema
-![asciinema video](http://i68.tinypic.com/257lggo.png)
-
-
-## Usage (Run Bash)
-
-```python
-bash wpinstall.sh
-```
+<a href="https://asciinema.org/a/pPKfV8hS0IqJD60sLiElm0eMl" rel="some text">![Foo](http://i68.tinypic.com/257lggo.png)]</a>
 
 ## Contributing
 This is an open source project.
