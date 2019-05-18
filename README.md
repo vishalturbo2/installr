@@ -1,8 +1,8 @@
-# PROJECT INSTALLr (Team Codeskulls)
+# PROJECT INSTALLr (Team Codeskulls) (presented for Afourtech Hackathon)
 
 Installr makes installations easy by using little scripts. This project will be updated with every installer script for Joomla,  Laravel, installing angular js, and every installation script or you can request us through the mail codeskulls@gmail.com
 
-## Wordpress Installation (represented for Afourtech Hackathon)
+## Wordpress Installation supported for Ubuntu 16.04 & Ubuntu 18.04(presented for Afourtech Hackathon)
 
 Use the bash [script](https://raw.githubusercontent.com/vishalturbo2/installr/master/wpinstall.sh) to install WordPress.
 
