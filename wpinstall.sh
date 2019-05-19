@@ -1,7 +1,11 @@
 #!/bin/bash -e
 clear
+echo "============================================"
+echo "============================================"
 echo "wordpress installation script by Team Codeskulls"
 echo "script made for afourtech hackathon"
+echo "============================================"
+echo "============================================"
 apt-get update
 apt-get install perl
 echo "installing apache server"
@@ -89,6 +93,8 @@ replace "/var/www/html" "/var/www/html/wordpress" -- 000-default.conf
 service apache2 restart
 
 echo "========================="
-echo "Installation is complete."
+echo "Wordpress Installation is complete."
 echo "========================="
+echo "your website link"
+echo "Website:    https://www.$DOMAIN"
 fi          
