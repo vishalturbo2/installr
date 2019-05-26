@@ -23,7 +23,7 @@ installr-<package name>
 * 
 
 ## Watch our tutorial video on asciinema
-<a href="https://asciinema.org/a/pPKfV8hS0IqJD60sLiElm0eMl" rel="some text">![Foo](http://i68.tinypic.com/257lggo.png)</a>
+<a href="https://asciinema.org/a/cCW4XZ2iu9YRuSpKPOwsIKsjm" rel="some text">![Foo](http://i68.tinypic.com/257lggo.png)</a>
 
 ## Contributing
 This is an open source project.
